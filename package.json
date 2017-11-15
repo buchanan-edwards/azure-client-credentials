@@ -1,6 +1,6 @@
 {
   "name": "azure-client-credentials",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Requests and caches access tokens for Azure Active Directory (AAD) resources using client credentials.",
   "main": "credentials.js",
   "scripts": {

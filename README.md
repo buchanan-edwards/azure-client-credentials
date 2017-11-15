@@ -2,7 +2,7 @@
 
 Requests and caches access tokens for Azure Active Directory (AAD) resources using client credentials.
 
-Version 1.0.0
+Version 1.0.1
 
 Exports the `AzureClientCredentials` class that provides the `getAccessToken()` method. The mechanism by which the access token is obtained is described by the [Service to Service Calls Using Client Credentials](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service) article.
 
@@ -41,7 +41,7 @@ You can request access tokens for any number of resources. The tokens are cached
 AzureClientCredentials(tenant, clientId, clientSecret)
 ```
 
-Creates a new `AzureClientCredentials` instance for the specified `tenant`. The `clientId` and the `clientSecret` must be for an AAD application that has access rights to the resource specified as the first parameter to the `getAccessToken()` method.
+Creates a new `AzureClientCredentials` instance for the specified `tenant`. The `clientId` and the `clientSecret` must be for an AAD application that has access rights to the resource specified as the parameter to the `getAccessToken()` method.
 
 ### getAccessToken()
 

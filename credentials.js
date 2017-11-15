@@ -46,6 +46,7 @@ const MICROSOFT_LOGIN_URL = 'https://login.microsoftonline.com';
  * an access token for the specified resource.
  */
 class AzureClientCredentials {
+
   /**
    * Creates a new AzureClientCredentials class.
    * @param {string} tenant - The Azure AD tenant.
