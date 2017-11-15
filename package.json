@@ -1,0 +1,29 @@
+{
+  "name": "azure-client-credentials",
+  "version": "1.0.0",
+  "description": "Requests and caches access tokens for Azure Active Directory (AAD) resources using client credentials.",
+  "main": "credentials.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url":
+      "git+https://github.com/buchanan-edwards/azure-client-credentials.git"
+  },
+  "keywords": ["AAD"],
+  "author": {
+    "name": "Frank Hellwig",
+    "email": "frank.hellwig@buchanan-edwards.com",
+    "url": "http://buchanan-edwards.com"
+  },
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/buchanan-edwards/azure-client-credentials/issues"
+  },
+  "homepage":
+    "https://github.com/buchanan-edwards/azure-client-credentials#readme",
+  "dependencies": {
+    "request": "^2.83.0"
+  }
+}
