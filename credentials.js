@@ -46,7 +46,6 @@ const MICROSOFT_LOGIN_URL = 'https://login.microsoftonline.com';
  * an access token for the specified resource.
  */
 class AzureClientCredentials {
-
   /**
    * Creates a new AzureClientCredentials class.
    * @param {string} tenant - The Azure AD tenant.
@@ -69,8 +68,7 @@ class AzureClientCredentials {
   getAccessToken(resource) {
     let token = this.tokens[resource];
     if (token) {
-      var now = new Date();
-      if (now.getTime() < token.exp) {
+      if (Date.now() < token.exp) {
         return Promise.resolve(token.val);
       }
     }
@@ -90,8 +88,7 @@ class AzureClientCredentials {
       resource: resource
     };
     return this._httpsPost('token', params).then(body => {
-      let now = new Date();
-      let exp = now.getTime() + parseInt(body.expires_in) * 1000;
+      let exp = Date.now() + parseInt(body.expires_in) * 1000;
       this.tokens[resource] = {
         val: body.access_token,
         exp: exp - FIVE_MINUTE_BUFFER
