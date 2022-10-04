@@ -4,14 +4,17 @@
   "description": "Requests and caches access tokens for Azure Active Directory (AAD) resources using client credentials.",
   "main": "credentials.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
-    "url":
-      "git+https://github.com/buchanan-edwards/azure-client-credentials.git"
+    "url": "git+https://github.com/buchanan-edwards/azure-client-credentials.git"
   },
-  "keywords": ["AAD"],
+  "keywords": [
+    "AAD"
+  ],
   "author": {
     "name": "Frank Hellwig",
     "email": "frank.hellwig@buchanan-edwards.com",
@@ -21,9 +24,10 @@
   "bugs": {
     "url": "https://github.com/buchanan-edwards/azure-client-credentials/issues"
   },
-  "homepage":
-    "https://github.com/buchanan-edwards/azure-client-credentials#readme",
+  "homepage": "https://github.com/buchanan-edwards/azure-client-credentials#readme",
   "dependencies": {
-    "request": "^2.83.0"
-  }
+    "request": "^2.88.0",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
